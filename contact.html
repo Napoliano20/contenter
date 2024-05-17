@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="css/styleContact.css">
+</head>
+<body>
+  <div class="containerContact">
+    <h1 class="logo">Login</h1>
+    <form id="login-form" method="post" action="index.html">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" onclick="promptOfInput(message,defaultValue)">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="text" id="nameInput" name="password" required>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="remember-me" name="remember_me">
+        <label for="remember-me">Remember Me</label>
+      </div>
+      <button onclick="showSuccessMessage()" type="submit" class="btn btn-primary">Log In</button>
+      <a href="#" class="forgot-password">Forgot Password?</a>
+      <div><a href="#" class="forgot-password" onclick="generateRandomPassword(12,true,true,true,false)">Generate Random Password</a></div>
+    </form>
+  </div>
+  
+
+  <script src="js/script.js"></script>
+</body>
+</html>
